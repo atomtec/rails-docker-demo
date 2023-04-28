@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+## Run the app 
 
-* System dependencies
+  
 
-* Configuration
+* docker-compose build
 
-* Database creation
+* docker-compose run app rake db:create
 
-* Database initialization
+* docker-compose run app rails db:migrate
 
-* How to run the test suite
+* docker-compose run app rails db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
+* docker-compose run app bundle exec rspec  (run  tests)
 
-* Deployment instructions
+* docker-compose up //run server 
 
-* ...
+Now use the post man collection 
+
+Default user is admin / password123
+
+
+
+
+
